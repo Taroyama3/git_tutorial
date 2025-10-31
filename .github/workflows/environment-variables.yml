@@ -4,9 +4,11 @@ jobs:
   run:
     runs-on: ubuntu-latest
     env:
-      BRANCH: main                # ジョブレベルで環境変数を定義
+      BRANCH: main                    # ジョブレベルで環境変数を定義
     steps:
-      - run: echo "${BRANCH}"     # シェルコマンドからジョブレベルの環境変数を参照
+      - run: echo "${BRANCH}"         # シェルコマンドからジョブレベルの環境変数を参照
       - uses: actions/checkout@v4
         with:
-          ref: ${{ env.BRANCH }}  # envコンテキスト経由でジョブレベルの環境変数を参照
+          ref: ${{ env.BRANCH }}      # envコンテキスト経由でジョブレベルの環境変数を参照
+      - run: echo "${GITHUB_ACTIONS}" # GitHubがデフォルトで設定する環境変数を参照
+      - run: echo "${GITHUB_JOB}"     # GitHubがデフォルトで設定する環境変数を参照
