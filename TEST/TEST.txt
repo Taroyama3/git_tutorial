@@ -1,5 +1,5 @@
 aaaa
 bbbb
-cccc aaaa #ブランチ2で修正
+cccc
 dddd aaaa #ブランチ2で修正
 eeee
