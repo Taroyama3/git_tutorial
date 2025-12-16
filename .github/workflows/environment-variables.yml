@@ -1,0 +1,11 @@
+name: Environment variables
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    env:
+      ACTOR: ${{ github.actor }}      # コンテキストの値を環境変数へ格納
+      USERNAME: ${{ vars.USERNAME }}  # シークレットの値を環境変数へ格納
+    steps:
+      - run: echo "${ACTOR}"          # ACTORを表示
+      - run: echo "${USERNAME}"          # ACTORを表示

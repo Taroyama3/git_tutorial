@@ -1,0 +1,8 @@
+name: Contexts
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: github contexts message
+        run: echo "${{ github.actor}}"
