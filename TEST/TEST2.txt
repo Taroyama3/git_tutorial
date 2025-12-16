@@ -1,2 +1,0 @@
-testfile_2
-squashtest
