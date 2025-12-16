@@ -1,0 +1,6 @@
+aaaa
+bbbb aaaa #ブランチ1で修正
+cccc
+dddd aaaa #ブランチ2で修正
+eeee
+squashtest
