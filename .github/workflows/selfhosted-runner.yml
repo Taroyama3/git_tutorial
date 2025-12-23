@@ -1,7 +1,7 @@
 name: Hello World selfhosted
 on: [push]
 jobs:
-  Hello-World-Job:
+  Hello-World-Job-aws-selfhosted:
     runs-on:
       - codebuild-TEST_github_selfhosted_runner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:

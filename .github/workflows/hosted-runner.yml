@@ -1,8 +1,7 @@
 name: Hello World hosted
 on: [push]
 jobs:
-  Hello-World-Job:
-    runs-on:
-       runs-on: ubuntu-latest
+  Hello-World-Job-hosted:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World"
