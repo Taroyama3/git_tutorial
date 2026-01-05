@@ -1,8 +1,8 @@
-name: Hello World selfhosted
+name: Hello World
 on: [push]
 jobs:
-  Hello-World-Job-aws-selfhosted:
+  Hello-World-Job:
     runs-on:
-       - codebuild-TEST-Github-AWS-Runner-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-github-selfhosted-runner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
-      - run: echo "Hello World aws selfhosted"
+      - run: echo "Hello World"
